@@ -37,7 +37,7 @@ func main() {
 		fs.ServeHTTP(w, r)
 	})
 
-	err := http.ListenAndServe(":6802", nil)
+	err := http.ListenAndServe(":8602", nil)
 	if err != nil {
 		log.Println("Server Error:", err)
 	}
